@@ -1,0 +1,1820 @@
+{
+  "version": 1,
+  "measuredAt": "2026-06-30T10:43:49.032Z",
+  "runtime": {
+    "executable": "C:\\Users\\rvass\\AppData\\Local\\Volta\\tools\\image\\node\\24.16.0\\node.exe",
+    "nodeVersion": "v24.16.0",
+    "platform": "win32-x64",
+    "method": "End-to-end Node.js process time including module loading, parsing, VM initialization, test execution, and process shutdown.",
+    "measuredRuns": 5,
+    "warmupRuns": 1
+  },
+  "variants": [
+    {
+      "id": "original",
+      "label": "Original"
+    },
+    {
+      "id": "trad",
+      "label": "AST-Based"
+    },
+    {
+      "id": "vm",
+      "label": "VM"
+    },
+    {
+      "id": "layered",
+      "label": "Layered"
+    }
+  ],
+  "summary": {
+    "original": {
+      "files": 25,
+      "totalSizeBytes": 18771,
+      "totalSizeKiB": 18.3310546875,
+      "averageSizeKiB": 0.7332421875,
+      "averageRuntimeMs": 84.323452,
+      "sizeRatio": 1,
+      "runtimeRatio": 1
+    },
+    "trad": {
+      "files": 25,
+      "totalSizeBytes": 101378,
+      "totalSizeKiB": 99.001953125,
+      "averageSizeKiB": 3.960078125,
+      "averageRuntimeMs": 85.965628,
+      "sizeRatio": 5.400777795535666,
+      "runtimeRatio": 1.0194747245404516
+    },
+    "vm": {
+      "files": 25,
+      "totalSizeBytes": 1775455,
+      "totalSizeKiB": 1733.8427734375,
+      "averageSizeKiB": 69.3537109375,
+      "averageRuntimeMs": 251.52100959999996,
+      "sizeRatio": 94.58499813542166,
+      "runtimeRatio": 2.982812060398096
+    },
+    "layered": {
+      "files": 25,
+      "totalSizeBytes": 3823478,
+      "totalSizeKiB": 3733.865234375,
+      "averageSizeKiB": 149.354609375,
+      "averageRuntimeMs": 574.3975848,
+      "sizeRatio": 203.6906930904054,
+      "runtimeRatio": 6.8118366975773235
+    }
+  },
+  "files": [
+    {
+      "file": "base64_codec.js",
+      "variants": {
+        "original": {
+          "sizeBytes": 756,
+          "sizeKiB": 0.73828125,
+          "runtime": {
+            "runsMs": [
+              84.5308,
+              84.6928,
+              96.9795,
+              95.8557,
+              98.4591
+            ],
+            "averageMs": 92.10358000000001,
+            "minimumMs": 84.5308,
+            "maximumMs": 98.4591
+          }
+        },
+        "trad": {
+          "sizeBytes": 4439,
+          "sizeKiB": 4.3349609375,
+          "runtime": {
+            "runsMs": [
+              98.2687,
+              82.199,
+              83.4139,
+              91.691,
+              93.6281
+            ],
+            "averageMs": 89.84013999999999,
+            "minimumMs": 82.199,
+            "maximumMs": 98.2687
+          }
+        },
+        "vm": {
+          "sizeBytes": 74923,
+          "sizeKiB": 73.1669921875,
+          "runtime": {
+            "runsMs": [
+              296.7676,
+              401.3002,
+              138.6648,
+              274.8869,
+              303.3903
+            ],
+            "averageMs": 283.00196,
+            "minimumMs": 138.6648,
+            "maximumMs": 401.3002
+          }
+        },
+        "layered": {
+          "sizeBytes": 157052,
+          "sizeKiB": 153.37109375,
+          "runtime": {
+            "runsMs": [
+              318.7025,
+              323.4253,
+              326.3282,
+              320.0806,
+              345.9719
+            ],
+            "averageMs": 326.9017,
+            "minimumMs": 318.7025,
+            "maximumMs": 345.9719
+          }
+        }
+      },
+      "outputSha256": "3a7930d06c4a5c5bb7d771db79e925aad9d0e8e27f49080b5a04f3afeb3b345e"
+    },
+    {
+      "file": "binary_search.js",
+      "variants": {
+        "trad": {
+          "sizeBytes": 4435,
+          "sizeKiB": 4.3310546875,
+          "runtime": {
+            "runsMs": [
+              93.5802,
+              75.1894,
+              72.1213,
+              76.3284,
+              93.7949
+            ],
+            "averageMs": 82.20284000000001,
+            "minimumMs": 72.1213,
+            "maximumMs": 93.7949
+          }
+        },
+        "vm": {
+          "sizeBytes": 72765,
+          "sizeKiB": 71.0595703125,
+          "runtime": {
+            "runsMs": [
+              221.9566,
+              234.6419,
+              240.1561,
+              231.8503,
+              243.1458
+            ],
+            "averageMs": 234.35014,
+            "minimumMs": 221.9566,
+            "maximumMs": 243.1458
+          }
+        },
+        "layered": {
+          "sizeBytes": 153174,
+          "sizeKiB": 149.583984375,
+          "runtime": {
+            "runsMs": [
+              595.2506,
+              540.1739,
+              556.5526,
+              558.9479,
+              527.3647
+            ],
+            "averageMs": 555.65794,
+            "minimumMs": 527.3647,
+            "maximumMs": 595.2506
+          }
+        },
+        "original": {
+          "sizeBytes": 793,
+          "sizeKiB": 0.7744140625,
+          "runtime": {
+            "runsMs": [
+              77.5902,
+              84.041,
+              75.1649,
+              82.722,
+              84.3893
+            ],
+            "averageMs": 80.78147999999999,
+            "minimumMs": 75.1649,
+            "maximumMs": 84.3893
+          }
+        }
+      },
+      "outputSha256": "6890c101ebbbae22b3b2becdbda6e6d2a2ffbeb97be82bbb11d81f840f529215"
+    },
+    {
+      "file": "binary_tree.js",
+      "variants": {
+        "vm": {
+          "sizeBytes": 76330,
+          "sizeKiB": 74.541015625,
+          "runtime": {
+            "runsMs": [
+              367.152,
+              226.2775,
+              324.1271,
+              368.2553,
+              360.1348
+            ],
+            "averageMs": 329.18934,
+            "minimumMs": 226.2775,
+            "maximumMs": 368.2553
+          }
+        },
+        "layered": {
+          "sizeBytes": 163247,
+          "sizeKiB": 159.4208984375,
+          "runtime": {
+            "runsMs": [
+              748.8935,
+              730.0848,
+              799.5378,
+              742.953,
+              765.7107
+            ],
+            "averageMs": 757.43596,
+            "minimumMs": 730.0848,
+            "maximumMs": 799.5378
+          }
+        },
+        "original": {
+          "sizeBytes": 520,
+          "sizeKiB": 0.5078125,
+          "runtime": {
+            "runsMs": [
+              93.2172,
+              79.8772,
+              89.178,
+              97.9268,
+              72.1176
+            ],
+            "averageMs": 86.46336,
+            "minimumMs": 72.1176,
+            "maximumMs": 97.9268
+          }
+        },
+        "trad": {
+          "sizeBytes": 3440,
+          "sizeKiB": 3.359375,
+          "runtime": {
+            "runsMs": [
+              70.5192,
+              71.4334,
+              87.1527,
+              118.024,
+              85.5114
+            ],
+            "averageMs": 86.52814,
+            "minimumMs": 70.5192,
+            "maximumMs": 118.024
+          }
+        }
+      },
+      "outputSha256": "b6b61ecec16ce23bf2fc5d0e8cae57202d3c01b96bd1ecdf8fdead2ceb3805c4"
+    },
+    {
+      "file": "bubble_sort.js",
+      "variants": {
+        "layered": {
+          "sizeBytes": 144252,
+          "sizeKiB": 140.87109375,
+          "runtime": {
+            "runsMs": [
+              531.4929,
+              497.7538,
+              527.3719,
+              530.101,
+              526.7908
+            ],
+            "averageMs": 522.70208,
+            "minimumMs": 497.7538,
+            "maximumMs": 531.4929
+          }
+        },
+        "original": {
+          "sizeBytes": 399,
+          "sizeKiB": 0.3896484375,
+          "runtime": {
+            "runsMs": [
+              73.7446,
+              75.8644,
+              77.9624,
+              72.5813,
+              70.0654
+            ],
+            "averageMs": 74.04362,
+            "minimumMs": 70.0654,
+            "maximumMs": 77.9624
+          }
+        },
+        "trad": {
+          "sizeBytes": 3322,
+          "sizeKiB": 3.244140625,
+          "runtime": {
+            "runsMs": [
+              86.2734,
+              78.0096,
+              70.4881,
+              72.2016,
+              74.5594
+            ],
+            "averageMs": 76.30642,
+            "minimumMs": 70.4881,
+            "maximumMs": 86.2734
+          }
+        },
+        "vm": {
+          "sizeBytes": 62294,
+          "sizeKiB": 60.833984375,
+          "runtime": {
+            "runsMs": [
+              244.3206,
+              245.9362,
+              244.3917,
+              255.3453,
+              267.6425
+            ],
+            "averageMs": 251.52725999999998,
+            "minimumMs": 244.3206,
+            "maximumMs": 267.6425
+          }
+        }
+      },
+      "outputSha256": "f65e0aac60c407b1cfe4f7f5c5e7287c0607091093e1f4d03cf32d67a1921aef"
+    },
+    {
+      "file": "callback_queue.js",
+      "variants": {
+        "original": {
+          "sizeBytes": 840,
+          "sizeKiB": 0.8203125,
+          "runtime": {
+            "runsMs": [
+              88.4042,
+              75.3813,
+              77.2923,
+              86.5514,
+              80.8843
+            ],
+            "averageMs": 81.70270000000001,
+            "minimumMs": 75.3813,
+            "maximumMs": 88.4042
+          }
+        },
+        "trad": {
+          "sizeBytes": 5345,
+          "sizeKiB": 5.2197265625,
+          "runtime": {
+            "runsMs": [
+              116.3017,
+              107.3203,
+              80.5868,
+              90.2388,
+              97.9003
+            ],
+            "averageMs": 98.46958,
+            "minimumMs": 80.5868,
+            "maximumMs": 116.3017
+          }
+        },
+        "vm": {
+          "sizeBytes": 70830,
+          "sizeKiB": 69.169921875,
+          "runtime": {
+            "runsMs": [
+              134.6202,
+              127.1588,
+              130.3168,
+              230.9438,
+              167.7811
+            ],
+            "averageMs": 158.16414000000003,
+            "minimumMs": 127.1588,
+            "maximumMs": 230.9438
+          }
+        },
+        "layered": {
+          "sizeBytes": 152951,
+          "sizeKiB": 149.3662109375,
+          "runtime": {
+            "runsMs": [
+              257.8596,
+              250.4339,
+              257.7721,
+              249.3334,
+              234.2397
+            ],
+            "averageMs": 249.92774,
+            "minimumMs": 234.2397,
+            "maximumMs": 257.8596
+          }
+        }
+      },
+      "outputSha256": "c6b207956ba02874354e53a3d4ea7e603617d0a58b703da1000c46f8706eb86f"
+    },
+    {
+      "file": "cart_total.js",
+      "variants": {
+        "trad": {
+          "sizeBytes": 4463,
+          "sizeKiB": 4.3583984375,
+          "runtime": {
+            "runsMs": [
+              88.3124,
+              111.068,
+              107.7271,
+              97.0794,
+              93.4746
+            ],
+            "averageMs": 99.5323,
+            "minimumMs": 88.3124,
+            "maximumMs": 111.068
+          }
+        },
+        "vm": {
+          "sizeBytes": 69665,
+          "sizeKiB": 68.0322265625,
+          "runtime": {
+            "runsMs": [
+              131.7752,
+              129.6896,
+              122.8494,
+              117.8349,
+              126.6183
+            ],
+            "averageMs": 125.75348000000001,
+            "minimumMs": 117.8349,
+            "maximumMs": 131.7752
+          }
+        },
+        "layered": {
+          "sizeBytes": 154507,
+          "sizeKiB": 150.8857421875,
+          "runtime": {
+            "runsMs": [
+              225.3263,
+              226.2728,
+              210.2659,
+              366.4152,
+              242.5319
+            ],
+            "averageMs": 254.16242000000003,
+            "minimumMs": 210.2659,
+            "maximumMs": 366.4152
+          }
+        },
+        "original": {
+          "sizeBytes": 914,
+          "sizeKiB": 0.892578125,
+          "runtime": {
+            "runsMs": [
+              83.4523,
+              75.5307,
+              76.3387,
+              84.4725,
+              84.1911
+            ],
+            "averageMs": 80.79706000000002,
+            "minimumMs": 75.5307,
+            "maximumMs": 84.4725
+          }
+        }
+      },
+      "outputSha256": "327a2074a8dae352b390d0d3cf41f739e46ed21ab1e184a3b365eae18f6eeb63"
+    },
+    {
+      "file": "closured_counters.js",
+      "variants": {
+        "vm": {
+          "sizeBytes": 54929,
+          "sizeKiB": 53.6416015625,
+          "runtime": {
+            "runsMs": [
+              91.6333,
+              88.1944,
+              102.1537,
+              92.6969,
+              96.1274
+            ],
+            "averageMs": 94.16114,
+            "minimumMs": 88.1944,
+            "maximumMs": 102.1537
+          }
+        },
+        "layered": {
+          "sizeBytes": 128587,
+          "sizeKiB": 125.5732421875,
+          "runtime": {
+            "runsMs": [
+              138.6642,
+              128.8014,
+              130.6393,
+              131.7215,
+              138.6333
+            ],
+            "averageMs": 133.69194,
+            "minimumMs": 128.8014,
+            "maximumMs": 138.6642
+          }
+        },
+        "original": {
+          "sizeBytes": 351,
+          "sizeKiB": 0.3427734375,
+          "runtime": {
+            "runsMs": [
+              102.1875,
+              104.0771,
+              102.3814,
+              87.7134,
+              81.5499
+            ],
+            "averageMs": 95.58185999999999,
+            "minimumMs": 81.5499,
+            "maximumMs": 104.0771
+          }
+        },
+        "trad": {
+          "sizeBytes": 2387,
+          "sizeKiB": 2.3310546875,
+          "runtime": {
+            "runsMs": [
+              82.0665,
+              83.3414,
+              98.88,
+              107.0983,
+              108.0472
+            ],
+            "averageMs": 95.88668,
+            "minimumMs": 82.0665,
+            "maximumMs": 108.0472
+          }
+        }
+      },
+      "outputSha256": "2ca71580fbeb0308a5c566ec12a9a4ae1486fc5c542bdfcb3104323d458736e1"
+    },
+    {
+      "file": "currency_converter.js",
+      "variants": {
+        "layered": {
+          "sizeBytes": 138692,
+          "sizeKiB": 135.44140625,
+          "runtime": {
+            "runsMs": [
+              195.3436,
+              174.7915,
+              177.0061,
+              185.898,
+              179.5835
+            ],
+            "averageMs": 182.52454,
+            "minimumMs": 174.7915,
+            "maximumMs": 195.3436
+          }
+        },
+        "original": {
+          "sizeBytes": 501,
+          "sizeKiB": 0.4892578125,
+          "runtime": {
+            "runsMs": [
+              69.9297,
+              74.5563,
+              72.9274,
+              89.7825,
+              79.4095
+            ],
+            "averageMs": 77.32108,
+            "minimumMs": 69.9297,
+            "maximumMs": 89.7825
+          }
+        },
+        "trad": {
+          "sizeBytes": 3006,
+          "sizeKiB": 2.935546875,
+          "runtime": {
+            "runsMs": [
+              81.3161,
+              77.8033,
+              86.6028,
+              85.7022,
+              74.0837
+            ],
+            "averageMs": 81.10162,
+            "minimumMs": 74.0837,
+            "maximumMs": 86.6028
+          }
+        },
+        "vm": {
+          "sizeBytes": 59631,
+          "sizeKiB": 58.2333984375,
+          "runtime": {
+            "runsMs": [
+              110.1174,
+              107.7437,
+              120.9611,
+              123.8914,
+              119.6193
+            ],
+            "averageMs": 116.46658,
+            "minimumMs": 107.7437,
+            "maximumMs": 123.8914
+          }
+        }
+      },
+      "outputSha256": "33bd6444e4953b19947ccbb3517ddd66d98d87b408d359ca4b765a87645ce96f"
+    },
+    {
+      "file": "date_utils.js",
+      "variants": {
+        "original": {
+          "sizeBytes": 791,
+          "sizeKiB": 0.7724609375,
+          "runtime": {
+            "runsMs": [
+              73.3579,
+              85.106,
+              76.8397,
+              70.5151,
+              78.5366
+            ],
+            "averageMs": 76.87106,
+            "minimumMs": 70.5151,
+            "maximumMs": 85.106
+          }
+        },
+        "trad": {
+          "sizeBytes": 4036,
+          "sizeKiB": 3.94140625,
+          "runtime": {
+            "runsMs": [
+              93.3492,
+              90.3525,
+              84.8349,
+              94.2274,
+              83.8638
+            ],
+            "averageMs": 89.32556,
+            "minimumMs": 83.8638,
+            "maximumMs": 94.2274
+          }
+        },
+        "vm": {
+          "sizeBytes": 70053,
+          "sizeKiB": 68.4111328125,
+          "runtime": {
+            "runsMs": [
+              139.3331,
+              119.6842,
+              117.2691,
+              136.0695,
+              113.9184
+            ],
+            "averageMs": 125.25486000000001,
+            "minimumMs": 113.9184,
+            "maximumMs": 139.3331
+          }
+        },
+        "layered": {
+          "sizeBytes": 150660,
+          "sizeKiB": 147.12890625,
+          "runtime": {
+            "runsMs": [
+              207.4468,
+              217.7165,
+              210.6012,
+              198.7232,
+              202.9196
+            ],
+            "averageMs": 207.48146000000003,
+            "minimumMs": 198.7232,
+            "maximumMs": 217.7165
+          }
+        }
+      },
+      "outputSha256": "0e6d596ef0c846ea70d10482d362ab79267c92db0fbe08d910ac9c6a9ba16931"
+    },
+    {
+      "file": "deep_if_else.js",
+      "variants": {
+        "trad": {
+          "sizeBytes": 3524,
+          "sizeKiB": 3.44140625,
+          "runtime": {
+            "runsMs": [
+              82.999,
+              73.9887,
+              75.2989,
+              79.4333,
+              80.6726
+            ],
+            "averageMs": 78.4785,
+            "minimumMs": 73.9887,
+            "maximumMs": 82.999
+          }
+        },
+        "vm": {
+          "sizeBytes": 67841,
+          "sizeKiB": 66.2509765625,
+          "runtime": {
+            "runsMs": [
+              115.4288,
+              118.033,
+              136.6069,
+              121.8835,
+              121.6341
+            ],
+            "averageMs": 122.71725999999998,
+            "minimumMs": 115.4288,
+            "maximumMs": 136.6069
+          }
+        },
+        "layered": {
+          "sizeBytes": 148850,
+          "sizeKiB": 145.361328125,
+          "runtime": {
+            "runsMs": [
+              198.2965,
+              190.6362,
+              206.1021,
+              231.9194,
+              204.89
+            ],
+            "averageMs": 206.36884,
+            "minimumMs": 190.6362,
+            "maximumMs": 231.9194
+          }
+        },
+        "original": {
+          "sizeBytes": 869,
+          "sizeKiB": 0.8486328125,
+          "runtime": {
+            "runsMs": [
+              91.9487,
+              95.5332,
+              86.4931,
+              78.6661,
+              82.7482
+            ],
+            "averageMs": 87.07786000000002,
+            "minimumMs": 78.6661,
+            "maximumMs": 95.5332
+          }
+        }
+      },
+      "outputSha256": "521d23222567589c36c301aca3baa3670d75fdd253d6259ef54ec8a008017be1"
+    },
+    {
+      "file": "factorial.js",
+      "variants": {
+        "vm": {
+          "sizeBytes": 61886,
+          "sizeKiB": 60.435546875,
+          "runtime": {
+            "runsMs": [
+              149.0765,
+              141.1273,
+              125.6718,
+              233.1437,
+              138.8686
+            ],
+            "averageMs": 157.57758,
+            "minimumMs": 125.6718,
+            "maximumMs": 233.1437
+          }
+        },
+        "layered": {
+          "sizeBytes": 138359,
+          "sizeKiB": 135.1162109375,
+          "runtime": {
+            "runsMs": [
+              270.2285,
+              273.4524,
+              265.8815,
+              248.0199,
+              258.5577
+            ],
+            "averageMs": 263.228,
+            "minimumMs": 248.0199,
+            "maximumMs": 273.4524
+          }
+        },
+        "original": {
+          "sizeBytes": 373,
+          "sizeKiB": 0.3642578125,
+          "runtime": {
+            "runsMs": [
+              93.6865,
+              75.2353,
+              84.9757,
+              80.8956,
+              79.7993
+            ],
+            "averageMs": 82.91848,
+            "minimumMs": 75.2353,
+            "maximumMs": 93.6865
+          }
+        },
+        "trad": {
+          "sizeBytes": 3263,
+          "sizeKiB": 3.1865234375,
+          "runtime": {
+            "runsMs": [
+              80.1209,
+              67.4379,
+              81.1546,
+              81.7643,
+              86.3335
+            ],
+            "averageMs": 79.36224000000001,
+            "minimumMs": 67.4379,
+            "maximumMs": 86.3335
+          }
+        }
+      },
+      "outputSha256": "f295c636eabd4b244507ede7489d10b2d479d886f3b20849c51f6480ba6b91b4"
+    },
+    {
+      "file": "fibonacci.js",
+      "variants": {
+        "layered": {
+          "sizeBytes": 149583,
+          "sizeKiB": 146.0771484375,
+          "runtime": {
+            "runsMs": [
+              1299.1648,
+              1334.4517,
+              1301.435,
+              1295.2426,
+              1352.3421
+            ],
+            "averageMs": 1316.52724,
+            "minimumMs": 1295.2426,
+            "maximumMs": 1352.3421
+          }
+        },
+        "original": {
+          "sizeBytes": 676,
+          "sizeKiB": 0.66015625,
+          "runtime": {
+            "runsMs": [
+              84.2501,
+              77.9931,
+              91.5807,
+              77.6838,
+              92.8592
+            ],
+            "averageMs": 84.87338,
+            "minimumMs": 77.6838,
+            "maximumMs": 92.8592
+          }
+        },
+        "trad": {
+          "sizeBytes": 4558,
+          "sizeKiB": 4.451171875,
+          "runtime": {
+            "runsMs": [
+              109.5428,
+              90.7502,
+              76.4582,
+              83.6706,
+              87.0342
+            ],
+            "averageMs": 89.4912,
+            "minimumMs": 76.4582,
+            "maximumMs": 109.5428
+          }
+        },
+        "vm": {
+          "sizeBytes": 68064,
+          "sizeKiB": 66.46875,
+          "runtime": {
+            "runsMs": [
+              444.6747,
+              600.4667,
+              582.1863,
+              604.4915,
+              607.0685
+            ],
+            "averageMs": 567.7775399999999,
+            "minimumMs": 444.6747,
+            "maximumMs": 607.0685
+          }
+        }
+      },
+      "outputSha256": "445d2904bdff6b267df66019c6b35d3ab7ffb173ffc6ed9880502ae3d6ca3fb5"
+    },
+    {
+      "file": "gcd.js",
+      "variants": {
+        "original": {
+          "sizeBytes": 301,
+          "sizeKiB": 0.2939453125,
+          "runtime": {
+            "runsMs": [
+              88.1208,
+              81.5487,
+              79.9531,
+              80.2676,
+              92.9579
+            ],
+            "averageMs": 84.56962,
+            "minimumMs": 79.9531,
+            "maximumMs": 92.9579
+          }
+        },
+        "trad": {
+          "sizeBytes": 3145,
+          "sizeKiB": 3.0712890625,
+          "runtime": {
+            "runsMs": [
+              78.4248,
+              73.4267,
+              72.0055,
+              86.2746,
+              76.0212
+            ],
+            "averageMs": 77.23056,
+            "minimumMs": 72.0055,
+            "maximumMs": 86.2746
+          }
+        },
+        "vm": {
+          "sizeBytes": 61780,
+          "sizeKiB": 60.33203125,
+          "runtime": {
+            "runsMs": [
+              116.9715,
+              136.2991,
+              132.4864,
+              138.119,
+              118.1245
+            ],
+            "averageMs": 128.4001,
+            "minimumMs": 116.9715,
+            "maximumMs": 138.119
+          }
+        },
+        "layered": {
+          "sizeBytes": 138881,
+          "sizeKiB": 135.6259765625,
+          "runtime": {
+            "runsMs": [
+              253.6786,
+              217.0208,
+              214.3753,
+              221.7394,
+              208.5107
+            ],
+            "averageMs": 223.06496,
+            "minimumMs": 208.5107,
+            "maximumMs": 253.6786
+          }
+        }
+      },
+      "outputSha256": "7ae7e6fdae9a5068746a314fd1b6d7345ddd5619ad2f13c32798bb7523af42e6"
+    },
+    {
+      "file": "input_validator.js",
+      "variants": {
+        "trad": {
+          "sizeBytes": 6268,
+          "sizeKiB": 6.12109375,
+          "runtime": {
+            "runsMs": [
+              82.6862,
+              68.0282,
+              81.8175,
+              73.1452,
+              83.2354
+            ],
+            "averageMs": 77.7825,
+            "minimumMs": 68.0282,
+            "maximumMs": 83.2354
+          }
+        },
+        "vm": {
+          "sizeBytes": 95102,
+          "sizeKiB": 92.873046875,
+          "runtime": {
+            "runsMs": [
+              306.376,
+              287.842,
+              372.1844,
+              393.7003,
+              357.4052
+            ],
+            "averageMs": 343.50158,
+            "minimumMs": 287.842,
+            "maximumMs": 393.7003
+          }
+        },
+        "layered": {
+          "sizeBytes": 187153,
+          "sizeKiB": 182.7666015625,
+          "runtime": {
+            "runsMs": [
+              916.1193,
+              1083.914,
+              913.0834,
+              921.1062,
+              930.7678
+            ],
+            "averageMs": 952.9981399999999,
+            "minimumMs": 913.0834,
+            "maximumMs": 1083.914
+          }
+        },
+        "original": {
+          "sizeBytes": 1644,
+          "sizeKiB": 1.60546875,
+          "runtime": {
+            "runsMs": [
+              86.7593,
+              71.6571,
+              97.6266,
+              89.1824,
+              108.9091
+            ],
+            "averageMs": 90.8269,
+            "minimumMs": 71.6571,
+            "maximumMs": 108.9091
+          }
+        }
+      },
+      "outputSha256": "728c056c5fcf6fc9ac13d53e0cc5799006c637412959cee379e069c1638cf03e"
+    },
+    {
+      "file": "matrix_multiply.js",
+      "variants": {
+        "vm": {
+          "sizeBytes": 68439,
+          "sizeKiB": 66.8349609375,
+          "runtime": {
+            "runsMs": [
+              283.1513,
+              269.2445,
+              304.7155,
+              255.5809,
+              321.9184
+            ],
+            "averageMs": 286.92212,
+            "minimumMs": 255.5809,
+            "maximumMs": 321.9184
+          }
+        },
+        "layered": {
+          "sizeBytes": 148350,
+          "sizeKiB": 144.873046875,
+          "runtime": {
+            "runsMs": [
+              630.9821,
+              614.1952,
+              673.0732,
+              593.0768,
+              636.8755
+            ],
+            "averageMs": 629.64056,
+            "minimumMs": 593.0768,
+            "maximumMs": 673.0732
+          }
+        },
+        "original": {
+          "sizeBytes": 537,
+          "sizeKiB": 0.5244140625,
+          "runtime": {
+            "runsMs": [
+              90.8979,
+              89.434,
+              85.9676,
+              87.2282,
+              84.2029
+            ],
+            "averageMs": 87.54612,
+            "minimumMs": 84.2029,
+            "maximumMs": 90.8979
+          }
+        },
+        "trad": {
+          "sizeBytes": 3256,
+          "sizeKiB": 3.1796875,
+          "runtime": {
+            "runsMs": [
+              89.2221,
+              75.7067,
+              87.4722,
+              85.8581,
+              84.6794
+            ],
+            "averageMs": 84.5877,
+            "minimumMs": 75.7067,
+            "maximumMs": 89.2221
+          }
+        }
+      },
+      "outputSha256": "9d32a70f1d4546e5cf255a36be22b0bf2dc06e00dc9415bcdc57f36e30ca1b25"
+    },
+    {
+      "file": "merge_sort.js",
+      "variants": {
+        "layered": {
+          "sizeBytes": 155972,
+          "sizeKiB": 152.31640625,
+          "runtime": {
+            "runsMs": [
+              447.1418,
+              431.3547,
+              420.0317,
+              415.5426,
+              418.0278
+            ],
+            "averageMs": 426.41972,
+            "minimumMs": 415.5426,
+            "maximumMs": 447.1418
+          }
+        },
+        "original": {
+          "sizeBytes": 784,
+          "sizeKiB": 0.765625,
+          "runtime": {
+            "runsMs": [
+              79.8721,
+              84.6374,
+              92.8171,
+              82.5171,
+              78.3645
+            ],
+            "averageMs": 83.64164000000001,
+            "minimumMs": 78.3645,
+            "maximumMs": 92.8171
+          }
+        },
+        "trad": {
+          "sizeBytes": 3738,
+          "sizeKiB": 3.650390625,
+          "runtime": {
+            "runsMs": [
+              95.76,
+              83.4951,
+              79.4454,
+              89.9013,
+              96.2747
+            ],
+            "averageMs": 88.9753,
+            "minimumMs": 79.4454,
+            "maximumMs": 96.2747
+          }
+        },
+        "vm": {
+          "sizeBytes": 72674,
+          "sizeKiB": 70.970703125,
+          "runtime": {
+            "runsMs": [
+              200.7473,
+              187.5749,
+              199.6553,
+              195.1226,
+              179.9602
+            ],
+            "averageMs": 192.61205999999999,
+            "minimumMs": 179.9602,
+            "maximumMs": 200.7473
+          }
+        }
+      },
+      "outputSha256": "60af78f1d29a01b4637ce22a99f1fcbf38a54aab0beebc880545631bede0deae"
+    },
+    {
+      "file": "nested_loops.js",
+      "variants": {
+        "original": {
+          "sizeBytes": 705,
+          "sizeKiB": 0.6884765625,
+          "runtime": {
+            "runsMs": [
+              75.67,
+              76.0783,
+              84.6207,
+              87.7362,
+              73.8483
+            ],
+            "averageMs": 79.5907,
+            "minimumMs": 73.8483,
+            "maximumMs": 87.7362
+          }
+        },
+        "trad": {
+          "sizeBytes": 3609,
+          "sizeKiB": 3.5244140625,
+          "runtime": {
+            "runsMs": [
+              96.9672,
+              78.4475,
+              86.4799,
+              81.1023,
+              81.4579
+            ],
+            "averageMs": 84.89096,
+            "minimumMs": 78.4475,
+            "maximumMs": 96.9672
+          }
+        },
+        "vm": {
+          "sizeBytes": 70192,
+          "sizeKiB": 68.546875,
+          "runtime": {
+            "runsMs": [
+              297.8853,
+              301.9977,
+              313.6123,
+              280.6357,
+              422.0855
+            ],
+            "averageMs": 323.2433,
+            "minimumMs": 280.6357,
+            "maximumMs": 422.0855
+          }
+        },
+        "layered": {
+          "sizeBytes": 150235,
+          "sizeKiB": 146.7138671875,
+          "runtime": {
+            "runsMs": [
+              632.7704,
+              636.1527,
+              620.0933,
+              667.5963,
+              626.4378
+            ],
+            "averageMs": 636.6101000000001,
+            "minimumMs": 620.0933,
+            "maximumMs": 667.5963
+          }
+        }
+      },
+      "outputSha256": "43b2c74807e1db6d335ca3c10ba55facdef15cb83a0d10dc824679713f0b606b"
+    },
+    {
+      "file": "prime_check.js",
+      "variants": {
+        "trad": {
+          "sizeBytes": 4484,
+          "sizeKiB": 4.37890625,
+          "runtime": {
+            "runsMs": [
+              82.7471,
+              87.5317,
+              72.803,
+              81.4403,
+              83.2725
+            ],
+            "averageMs": 81.55891999999999,
+            "minimumMs": 72.803,
+            "maximumMs": 87.5317
+          }
+        },
+        "vm": {
+          "sizeBytes": 78196,
+          "sizeKiB": 76.36328125,
+          "runtime": {
+            "runsMs": [
+              290.7514,
+              310.5334,
+              304.9308,
+              301.3857,
+              290.0893
+            ],
+            "averageMs": 299.53812,
+            "minimumMs": 290.0893,
+            "maximumMs": 310.5334
+          }
+        },
+        "layered": {
+          "sizeBytes": 162445,
+          "sizeKiB": 158.6376953125,
+          "runtime": {
+            "runsMs": [
+              525.7171,
+              540.7092,
+              513.1918,
+              532.7773,
+              530.4645
+            ],
+            "averageMs": 528.57198,
+            "minimumMs": 513.1918,
+            "maximumMs": 540.7092
+          }
+        },
+        "original": {
+          "sizeBytes": 763,
+          "sizeKiB": 0.7451171875,
+          "runtime": {
+            "runsMs": [
+              90.9955,
+              72.2333,
+              81.0914,
+              76.7725,
+              74.9103
+            ],
+            "averageMs": 79.2006,
+            "minimumMs": 72.2333,
+            "maximumMs": 90.9955
+          }
+        }
+      },
+      "outputSha256": "7ca36b393a2c0078666b976da640b5896a842a5e1f46b1e3c3fb452f837a2f1a"
+    },
+    {
+      "file": "quick_sort.js",
+      "variants": {
+        "vm": {
+          "sizeBytes": 75195,
+          "sizeKiB": 73.4326171875,
+          "runtime": {
+            "runsMs": [
+              169.1695,
+              178.6699,
+              189.4484,
+              171.7687,
+              165.2716
+            ],
+            "averageMs": 174.86562,
+            "minimumMs": 165.2716,
+            "maximumMs": 189.4484
+          }
+        },
+        "layered": {
+          "sizeBytes": 159959,
+          "sizeKiB": 156.2099609375,
+          "runtime": {
+            "runsMs": [
+              397.1185,
+              408.3754,
+              384.3862,
+              374.5853,
+              407.1082
+            ],
+            "averageMs": 394.31471999999997,
+            "minimumMs": 374.5853,
+            "maximumMs": 408.3754
+          }
+        },
+        "original": {
+          "sizeBytes": 663,
+          "sizeKiB": 0.6474609375,
+          "runtime": {
+            "runsMs": [
+              91.5933,
+              70.881,
+              74.985,
+              80.5787,
+              72.783
+            ],
+            "averageMs": 78.16420000000001,
+            "minimumMs": 70.881,
+            "maximumMs": 91.5933
+          }
+        },
+        "trad": {
+          "sizeBytes": 4467,
+          "sizeKiB": 4.3623046875,
+          "runtime": {
+            "runsMs": [
+              108.6761,
+              86.2173,
+              77.626,
+              80.4623,
+              75.1602
+            ],
+            "averageMs": 85.62838000000002,
+            "minimumMs": 75.1602,
+            "maximumMs": 108.6761
+          }
+        }
+      },
+      "outputSha256": "b1689735d99f46be9fb868219e68941541e875f6373b28b940f8f4dc26d79086"
+    },
+    {
+      "file": "recursive_backtrack.js",
+      "variants": {
+        "layered": {
+          "sizeBytes": 172601,
+          "sizeKiB": 168.5556640625,
+          "runtime": {
+            "runsMs": [
+              3401.9121,
+              3113.3721,
+              3190.5854,
+              3267.231,
+              3133.1403
+            ],
+            "averageMs": 3221.24818,
+            "minimumMs": 3113.3721,
+            "maximumMs": 3401.9121
+          }
+        },
+        "original": {
+          "sizeBytes": 844,
+          "sizeKiB": 0.82421875,
+          "runtime": {
+            "runsMs": [
+              107.8427,
+              80.4534,
+              95.6112,
+              74.2367,
+              82.2335
+            ],
+            "averageMs": 88.07549999999999,
+            "minimumMs": 74.2367,
+            "maximumMs": 107.8427
+          }
+        },
+        "trad": {
+          "sizeBytes": 4653,
+          "sizeKiB": 4.5439453125,
+          "runtime": {
+            "runsMs": [
+              90.6345,
+              80.226,
+              73.1299,
+              83.7557,
+              87.0965
+            ],
+            "averageMs": 82.96852,
+            "minimumMs": 73.1299,
+            "maximumMs": 90.6345
+          }
+        },
+        "vm": {
+          "sizeBytes": 83558,
+          "sizeKiB": 81.599609375,
+          "runtime": {
+            "runsMs": [
+              984.9778,
+              998.2853,
+              1105.6388,
+              968.9322,
+              988.0685
+            ],
+            "averageMs": 1009.1805200000001,
+            "minimumMs": 968.9322,
+            "maximumMs": 1105.6388
+          }
+        }
+      },
+      "outputSha256": "873817bb6fe7c8d93a27b8b2b19a27a3c640f523c4a25979e9d5cc903f54a7da"
+    },
+    {
+      "file": "string_manipulation.js",
+      "variants": {
+        "original": {
+          "sizeBytes": 1365,
+          "sizeKiB": 1.3330078125,
+          "runtime": {
+            "runsMs": [
+              74.172,
+              70.9035,
+              71.5779,
+              122.1307,
+              86.247
+            ],
+            "averageMs": 85.00622,
+            "minimumMs": 70.9035,
+            "maximumMs": 122.1307
+          }
+        },
+        "trad": {
+          "sizeBytes": 5280,
+          "sizeKiB": 5.15625,
+          "runtime": {
+            "runsMs": [
+              82.0033,
+              94.8262,
+              90.9324,
+              80.545,
+              77.8399
+            ],
+            "averageMs": 85.22936,
+            "minimumMs": 77.8399,
+            "maximumMs": 94.8262
+          }
+        },
+        "vm": {
+          "sizeBytes": 91016,
+          "sizeKiB": 88.8828125,
+          "runtime": {
+            "runsMs": [
+              279.5926,
+              273.5889,
+              262.7928,
+              287.0131,
+              287.0157
+            ],
+            "averageMs": 278.00061999999997,
+            "minimumMs": 262.7928,
+            "maximumMs": 287.0157
+          }
+        },
+        "layered": {
+          "sizeBytes": 179656,
+          "sizeKiB": 175.4453125,
+          "runtime": {
+            "runsMs": [
+              850.386,
+              830.1093,
+              809.6937,
+              819.936,
+              868.0886
+            ],
+            "averageMs": 835.6427200000002,
+            "minimumMs": 809.6937,
+            "maximumMs": 868.0886
+          }
+        }
+      },
+      "outputSha256": "bea3161857f4684bd44ad0224c083467a54c69ef8b6d059738310816f94ad574"
+    },
+    {
+      "file": "switch_dispatch.js",
+      "variants": {
+        "trad": {
+          "sizeBytes": 4075,
+          "sizeKiB": 3.9794921875,
+          "runtime": {
+            "runsMs": [
+              80.3509,
+              81.2321,
+              77.1726,
+              110.8439,
+              78.3117
+            ],
+            "averageMs": 85.58224,
+            "minimumMs": 77.1726,
+            "maximumMs": 110.8439
+          }
+        },
+        "vm": {
+          "sizeBytes": 65422,
+          "sizeKiB": 63.888671875,
+          "runtime": {
+            "runsMs": [
+              143.7252,
+              112.2326,
+              126.8584,
+              135.6835,
+              143.0677
+            ],
+            "averageMs": 132.31348000000003,
+            "minimumMs": 112.2326,
+            "maximumMs": 143.7252
+          }
+        },
+        "layered": {
+          "sizeBytes": 143376,
+          "sizeKiB": 140.015625,
+          "runtime": {
+            "runsMs": [
+              212.6519,
+              219.0661,
+              248.4167,
+              221.7793,
+              231.424
+            ],
+            "averageMs": 226.66760000000005,
+            "minimumMs": 212.6519,
+            "maximumMs": 248.4167
+          }
+        },
+        "original": {
+          "sizeBytes": 994,
+          "sizeKiB": 0.970703125,
+          "runtime": {
+            "runsMs": [
+              90.1814,
+              180.3829,
+              76.7725,
+              80.648,
+              87.2976
+            ],
+            "averageMs": 103.05648,
+            "minimumMs": 76.7725,
+            "maximumMs": 180.3829
+          }
+        }
+      },
+      "outputSha256": "4945e7fd0f7bbec0756d3f6d37091faa977c7de19dde422c1e0870b36976fbc7"
+    },
+    {
+      "file": "tax_calculator.js",
+      "variants": {
+        "vm": {
+          "sizeBytes": 65579,
+          "sizeKiB": 64.0419921875,
+          "runtime": {
+            "runsMs": [
+              138.6173,
+              130.3243,
+              132.049,
+              141.325,
+              140.1406
+            ],
+            "averageMs": 136.49123999999998,
+            "minimumMs": 130.3243,
+            "maximumMs": 141.325
+          }
+        },
+        "layered": {
+          "sizeBytes": 144883,
+          "sizeKiB": 141.4873046875,
+          "runtime": {
+            "runsMs": [
+              280.4904,
+              281.0276,
+              343.8578,
+              295.2344,
+              288.5169
+            ],
+            "averageMs": 297.82542,
+            "minimumMs": 280.4904,
+            "maximumMs": 343.8578
+          }
+        },
+        "original": {
+          "sizeBytes": 829,
+          "sizeKiB": 0.8095703125,
+          "runtime": {
+            "runsMs": [
+              87.9683,
+              76.9356,
+              87.9772,
+              83.9198,
+              86.9679
+            ],
+            "averageMs": 84.75376,
+            "minimumMs": 76.9356,
+            "maximumMs": 87.9772
+          }
+        },
+        "trad": {
+          "sizeBytes": 3370,
+          "sizeKiB": 3.291015625,
+          "runtime": {
+            "runsMs": [
+              90.7875,
+              97.1732,
+              87.237,
+              81.2187,
+              92.2033
+            ],
+            "averageMs": 89.72394,
+            "minimumMs": 81.2187,
+            "maximumMs": 97.1732
+          }
+        }
+      },
+      "outputSha256": "9e5d0323c5825842bec9f9a0b0c25ca4a8a9b9bfa4ddd6be0676cf8883437b84"
+    },
+    {
+      "file": "try_catch_flow.js",
+      "variants": {
+        "layered": {
+          "sizeBytes": 146491,
+          "sizeKiB": 143.0576171875,
+          "runtime": {
+            "runsMs": [
+              330.2038,
+              267.5573,
+              273.0802,
+              245.7655,
+              260.9312
+            ],
+            "averageMs": 275.5076,
+            "minimumMs": 245.7655,
+            "maximumMs": 330.2038
+          }
+        },
+        "original": {
+          "sizeBytes": 879,
+          "sizeKiB": 0.8583984375,
+          "runtime": {
+            "runsMs": [
+              77.2408,
+              83.116,
+              75.9871,
+              82.6698,
+              78.4254
+            ],
+            "averageMs": 79.48781999999999,
+            "minimumMs": 75.9871,
+            "maximumMs": 83.116
+          }
+        },
+        "trad": {
+          "sizeBytes": 4602,
+          "sizeKiB": 4.494140625,
+          "runtime": {
+            "runsMs": [
+              79.4322,
+              92.2097,
+              82.2412,
+              87.7563,
+              76.3454
+            ],
+            "averageMs": 83.59696,
+            "minimumMs": 76.3454,
+            "maximumMs": 92.2097
+          }
+        },
+        "vm": {
+          "sizeBytes": 68489,
+          "sizeKiB": 66.8837890625,
+          "runtime": {
+            "runsMs": [
+              137.5295,
+              143.3489,
+              123.2132,
+              138.6914,
+              146.7133
+            ],
+            "averageMs": 137.89925999999997,
+            "minimumMs": 123.2132,
+            "maximumMs": 146.7133
+          }
+        }
+      },
+      "outputSha256": "603dda489222486cef03133fb67638bc306cce8f24d53328cd65f2d142977ed1"
+    },
+    {
+      "file": "user_auth_mock.js",
+      "variants": {
+        "original": {
+          "sizeBytes": 680,
+          "sizeKiB": 0.6640625,
+          "runtime": {
+            "runsMs": [
+              75.7688,
+              85.8343,
+              95.2451,
+              83.119,
+              78.1889
+            ],
+            "averageMs": 83.63121999999998,
+            "minimumMs": 75.7688,
+            "maximumMs": 95.2451
+          }
+        },
+        "trad": {
+          "sizeBytes": 4213,
+          "sizeKiB": 4.1142578125,
+          "runtime": {
+            "runsMs": [
+              127.615,
+              75.482,
+              96.8936,
+              84.9241,
+              89.386
+            ],
+            "averageMs": 94.86014,
+            "minimumMs": 75.482,
+            "maximumMs": 127.615
+          }
+        },
+        "vm": {
+          "sizeBytes": 70602,
+          "sizeKiB": 68.947265625,
+          "runtime": {
+            "runsMs": [
+              272.7305,
+              255.019,
+              379.6395,
+              242.9578,
+              245.2329
+            ],
+            "averageMs": 279.11594,
+            "minimumMs": 242.9578,
+            "maximumMs": 379.6395
+          }
+        },
+        "layered": {
+          "sizeBytes": 153562,
+          "sizeKiB": 149.962890625,
+          "runtime": {
+            "runsMs": [
+              952.9708,
+              835.9029,
+              631.023,
+              674.4904,
+              579.7032
+            ],
+            "averageMs": 734.8180600000001,
+            "minimumMs": 579.7032,
+            "maximumMs": 952.9708
+          }
+        }
+      },
+      "outputSha256": "dd026038e1589fc3a787fe7328f8d34d98e475a2344ed9ed63ccdb47a57c314f"
+    }
+  ]
+}

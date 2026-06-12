@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "paths": {
+      "@experiment-vm/vm": ["../vm/src/index.ts"],
+      "@experiment-vm/vm/*": ["../vm/src/*.ts"]
+    }
+  },
+  "include": ["src"]
+}

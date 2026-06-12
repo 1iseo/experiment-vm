@@ -1,0 +1,8 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/vm" },
+    { "path": "./packages/bundler-plugin" },
+    { "path": "./packages/web" }
+  ]
+}

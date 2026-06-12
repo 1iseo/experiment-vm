@@ -1,0 +1,47 @@
+{
+  "name": "@experiment-vm/vm",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./vm": {
+      "types": "./dist/vm.d.ts",
+      "import": "./dist/vm.js"
+    },
+    "./ir_v2": {
+      "types": "./dist/ir_v2.d.ts",
+      "import": "./dist/ir_v2.js"
+    },
+    "./ir_lower": {
+      "types": "./dist/ir_lower.d.ts",
+      "import": "./dist/ir_lower.js"
+    },
+    "./disassemble": {
+      "types": "./dist/disassemble.d.ts",
+      "import": "./dist/disassemble.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.29.2",
+    "@babel/traverse": "^7.29.0",
+    "@babel/types": "^7.29.0",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@types/babel__traverse": "^7.28.0",
+    "@types/node": "^25.8.0",
+    "typescript": "^6.0.2",
+    "vitest": "^2.0.5"
+  }
+}

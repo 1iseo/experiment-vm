@@ -1,0 +1,23 @@
+{
+  "name": "@experiment-vm/web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "dev": "vite"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.29.2",
+    "@experiment-vm/vm": "workspace:*",
+    "@viz-js/viz": "^3.27.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.8.0",
+    "typescript": "^6.0.2",
+    "vite": "^5.4.21",
+    "vitest": "^2.0.5"
+  }
+}

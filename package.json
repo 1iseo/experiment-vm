@@ -1,0 +1,26 @@
+{
+  "name": "experiment-vm",
+  "version": "0.0.1",
+  "author": "Romeo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -r --if-present build",
+    "test": "pnpm -r --if-present test",
+    "test:watch": "pnpm -r --if-present test:watch",
+    "integration:lodash": "pnpm build && node scripts/lodash-integration.mjs",
+    "integration:todomvc": "pnpm build && node scripts/todomvc-integration.mjs --examples javascript-es6 --skip-baseline --test-command \"npm --prefix examples/javascript-es6 run build\"",
+    "benchmark:dataset": "node scripts/benchmark-dataset.mjs",
+    "dev:web": "pnpm --filter @experiment-vm/web dev",
+    "build:web": "pnpm --filter @experiment-vm/web build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.33.0",
+  "devDependencies": {
+    "@cerebras/cerebras_cloud_sdk": "^1.64.1",
+    "ai": "^7.0.8",
+    "javascript-obfuscator": "5.4.3"
+  }
+}
